@@ -1,76 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Portfolio</title>
-</head>
-<body>
-    <header id="header">
-        <h1>Nevcihan Cabik's Portfolio</h1>
-        <img src="http://lorempixel.com/400/200/animals" alt="my image">
-                
-        <!-- Navigation -->
-        <nav>
-            <ul id="header-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>  
-        <hr>
-        
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Dosis|Roboto&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Navigation -->
+      <nav id="nav-bar" class="container">
+        <h1 class="title">Nevcihan's Portfolio</h1>
+        <ul class="header-nav">
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <hr />
     </header>
     <main>
-        <h2>About Me</h2>
-        <p>My name is Nevcihan Cabik. I am an almost-front-end developer. I am also a ceramics artist, tango dancer and yoga lover.</p>
-        <!--Projects section-->
-        <section>
+      <section id="welcome">
+        <h2 class="right-heading">Welcome To My Personal Website!</h2>
+        <div class="content">
+          <p class="description">
+            My name is <span class="text-primary">Nevcihan Cabik</span>. I am an
+            almost-front-end developer. I am also a ceramics artist, tango
+            dancer and yoga lover. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Veniam ullam hic et beatae, unde perspiciatis
+            tempore excepturi officiis, corrupti mollitia iusto a rem dolorem
+            incidunt quidem culpa dicta delectus quos? Molestiae minima quis
+            velit dolorum placeat aliquam obcaecati explicabo aliquid porro
+            illum, impedit et facilis exercitationem soluta itaque quae alias.
+          </p>
+          <a href="about.html" class="btn btn-light">Read More</a>
+        </div>
+      </section>
+      <!--Projects section-->
+      <section id="projects">
         <h2>My projects</h2>
         <ul>
-            <li><a href="https://nl.pinterest.com/search/pins/?q=ceramics&rs=typed&term_meta[]=ceramics%7Ctyped" target="blank">Ceramics</a><br><img src="ceramics.jpg" alt="ceramics"></li>
-            <li><a href="https://nl.pinterest.com/search/pins/?q=tango&rs=typed&term_meta[]=tango%7Ctyped" target="blank">Tango</a><br><img src="tango.jpg" alt="tango"></li>
-            <li><a href="https://nl.pinterest.com/pin/547750373430173998/" target="_blank">Yoga</a><br><img src="yoga.jpg" alt="yoga"></li>
+          <li class="box-1"><a href="#">Ceramics</a></li>
+          <li class="box-2"><a href="#">Tango</a></li>
+          <li class="box-3"><a href="#">Yoga</a></li>
         </ul>
-
-        </section>
-          
-    </main>  
-    <footer>
-       
-        <!--info section-->
-        <section> 
-            <form action="process.php"></form>
-           <h2>Message me for new projects!</h2> 
-            <!-- name-->
-        
-            <label for="name">Name</label><br>
-            <input type="text" id="name" name="name">
-        <br>
-            <!-- email-->
-        
-            <label for="email">Email</label><br>
-            <input type="text" id="email" name="email">
-        <br>
-        <br>
-            <!--text-->
-    
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="Leave your message here"></textarea>
-        
-            <br>
-            <button name="button">Submit</button> 
-        </section>
-        <br>
-         <!--contact section-->
-        <section>
-                <h3>Contact Info</h3>
-                <h4>Nevcihan Cabik</h4>
-                <h4>Tel: 0687927131</h4>
-                <h4>Address: Putterstraat 30 Amsterdam</h4>
-        </section> 
-        
-    </footer>
-    
-</body>
+      </section>
+    </main>
+    <div class="clr"></div>
+  </body>
+  <footer id="main-footer">
+    <div class="ending">
+      <p>Nevcihan C. &copy; 2019, All Rights Reserved</p>
+    </div>
+  </footer>
 </html>
