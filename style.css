@@ -99,15 +99,24 @@ p {
   padding: 40px;
   width: 40%;
 }
-#projects {
-}
 #projects h2 {
   background: #3a093f;
   color: #d4ac6e;
-  font-size: 40px;
+  font-size: 50px;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  height: 100px;
+  padding: 20px 0 20px 0;
+}
+#projects a {
+  color: #ce440e;
+  font-size: 50px;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+#projects a:hover {
+  color: green;
 }
 #projects ul li {
   color: #3a093f;
@@ -144,6 +153,9 @@ p {
   text-align: center;
   padding: 20px;
 }
+#about-info {
+  padding: 20px 0 0 20px;
+}
 .photo {
   display: block;
   margin: auto;
@@ -172,9 +184,7 @@ p {
   height: 40px;
   font-size: 22px;
 }
-.btn btn-light submit {
-  padding-bottom: 10px;
-}
+
 textarea {
   width: 80%;
   padding: 10px;
